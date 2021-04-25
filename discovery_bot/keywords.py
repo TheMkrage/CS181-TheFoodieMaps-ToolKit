@@ -32,5 +32,23 @@ categories_to_keywords = {
         Keyword('sugar', True),
         Keyword('cream', True),
         Keyword('cake', True)
+    ],
+    'seafood': [
+        Keyword('seafood', True),
+        Keyword('fish', True),
+        Keyword('crab', True),
+        Keyword('krab', True),
+        Keyword('poke', False),
+        Keyword('salmon', True),
+        Keyword('tuna', True),
+        Keyword('oyster', True),
+        Keyword('clam', False),
+        Keyword('octopus', True),
+    ],
+    'hot dog': [
+        Keyword('hot dog', True),
+    ],
+    'pizza': [
+        Keyword('pizza', True),
     ]
 }

@@ -41,7 +41,6 @@ if __name__ == "__main__":
                 categories_string = ','.join(categories)
                 url_builder = 'https://www.instagram.com/p/' + \
                     p.get('node', {}).get('shortcode', '') + '/'
-
-                writer.writerow(
-                    {'Caption': caption, 'Food Types': categories_string, 'Post': url_builder})
-    # print(posts)
+                if len(categories) > 0:
+                    writer.writerow(
+                        {'Caption': caption, 'Food Types': categories_string, 'Post': url_builder})
